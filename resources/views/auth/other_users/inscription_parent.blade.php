@@ -18,9 +18,9 @@
 <body>
    
   <div class="vide mt-5"></div>
-  <div class="col-10">
+  {{-- <div class="col-10">
     <div class=" wordart slate offset-md-3 text-fluid"> <span class="word"> Bienvenue à la crèche</span></div>
-  </div>
+  </div> --}}
 
   <div class="container">
     <div class="row">
@@ -34,7 +34,7 @@
               <h2 class="active debut">Inscription</h2>
 
               <!-- Formulaire -->
-              <form action="" method="post">
+              <form action="{{route('membre.store')}}" method="post">
               @csrf
               <input type="text" id="login" class="fadeIn second" name="name" placeholder="Nom d'utilisateur">
               <input type="email" id="login" class="fadeIn second" name="email" placeholder="Email">

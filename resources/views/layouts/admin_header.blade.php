@@ -110,7 +110,13 @@
                     <a href="#" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
-                    <a href="#" class="btn btn-default btn-flat">Déconnexion</a>
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                     {{ __('Déconnexion') }}</a>
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                      @csrf
+                    </form>
                   </div>
                 </li>
               </ul>

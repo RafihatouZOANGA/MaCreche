@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Inscription</title>
+  <title>Ajouter un membre</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- <link href="img/favicon.png" rel="icon"> a remplacer par l'icone du logo-->
@@ -18,9 +18,9 @@
 <body>
    
   <div class="vide mt-5"></div>
-  <div class="col-10">
+  {{-- <div class="col-10">
     <div class=" wordart slate offset-md-3 text-fluid"> <span class="word"> Bienvenue à la crèche</span></div>
-  </div>
+  </div> --}}
 
   <div class="container">
     <div class="row">
@@ -31,16 +31,16 @@
         <div class="fadeInDown">
           <div id="formContent">
               
-              <h2 class="active debut">Inscription</h2>
+              <h2 class="active debut">Ajouter un membre</h2>
 
               <!-- Formulaire -->
-              <form action="" method="post">
+              <form action="{{route('membre.store')}}" method="POST">
               @csrf
               <input type="text" id="login" class="fadeIn second" name="name" placeholder="Nom d'utilisateur">
               <input type="email" id="login" class="fadeIn second" name="email" placeholder="Email">
               <input type="password" id="password" class="fadeIn third" name="password" placeholder="Mot de passe">
               <input type="password" id="password" class="fadeIn third" name="password_confirmation" placeholder="Confirmez votre mot de passe">
-              <input type="submit" class=" fadeIn fourth" value="S'inscrire">
+              <input type="submit" class=" fadeIn fourth" value="Ajouter">
               </form>
    
           </div>

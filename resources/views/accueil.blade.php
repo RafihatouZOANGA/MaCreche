@@ -1,5 +1,9 @@
 @extends('layouts.menu')
 @section('contenu')
+<div>
+  <a href="{{route('register')}}">Inscription</a>
+  <a href="{{route('login')}}">Connexion</a>
+</div>
 <section id="hero">
   <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AccueilController extends Controller
 {
-    public function index(){
+    public function dashboard(){
 
         return view('accueil');
     }
